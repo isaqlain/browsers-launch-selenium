@@ -23,6 +23,18 @@ public class BrowserControlMethods {
 		Thread.sleep(3000);
 		
 		driver.manage().window().maximize();	
+
+		Thread.sleep(3000);
+		
+		Dimension d = new Dimension(200,500);
+		
+		driver.manage().window().setSize(d);
+		
+		Thread.sleep(3000);
+		
+		Point p = new Point(400,400);
+		
+		driver.manage().window().setPosition(p);
 		
 	}
 
